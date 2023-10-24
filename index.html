@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>plugplay Earbuds</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet"/>
+    <!-- link to greensock main library and scroll plugin -->
+  </head>
+  <body>
+    <model-viewer id="model" src="model/earbuds.gltf" ar ar-modes="webxr scene-viewer quick-look" ios-src="model/earbuds.usdz" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="270.34deg 88.29deg 874.8m" field-of-view="10deg">
+
+      <!-- in this version, I have manually added, id="hotspot-1, id="hotspot-2", id="hotspot-3", id="hotspot-4"" -->
+      
+      <button class="Hotspot" slot="hotspot-1" data-position="-5.22063637161873m 2.104752613268355m -1.715474364470301m" data-normal="-0.47572329340111386m -0.03784980631390616m -0.8787802571050385m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation" id="hotspot-1">
+            <h2>Emblem Design</h2>
+            <p>The emblem design for PlugPlay earbuds is a unique and eye-catching resin design element that adds a touch of style and personality to your audio experience.</p>
+          </div>
+      </button>
+      <button class="Hotspot" slot="hotspot-2" data-position="-5.0235397754341005m 1.6417937168616372m -1.6084604648963072m" data-normal="-0.36433693009567614m -0.5149127121968526m -0.7759661720632799m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation" id="hotspot-2">
+            <h2>plugplay Logo</h2>
+            <p>Our logo features a distinctive exclamation point design, symbolizing the excitement and emphasis we place on delivering exceptional audio quality and user satisfaction.</p>
+          </div>
+      </button>
+      <button class="Hotspot" slot="hotspot-3" data-position="-5.101823510108886m 1.4266241579559633m -1.4175977749385242m" data-normal="-0.8453243075356924m 0.09962785296154393m -0.5248819924550423m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation" id="hotspot-3">
+            <h2>Charging Port</h2>
+            <p>The charging port on PlugPlay earbuds is designed for easy connection in its case, with a simple and minimal design for hassle-free recharging.
+            </p>
+          </div>
+      </button>
+      <button class="Hotspot" slot="hotspot-4" data-position="-5.031523524116311m 2.31626247180073m -1.014751722178m" data-normal="0.055364336603078046m 0.06878587628305038m 0.996094018382037m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation" id="hotspot-4">
+            <h2>Speaker 2</h2>
+            <p>This secondary speaker is dedicated to delivering extra bass and enhancing the lower-frequency range of your music, ensuring a deep and immersive audio experience.</p>
+            </div>
+      </button>
+      <button class="Hotspot" slot="hotspot-5" data-position="-4.806622024655836m 2.5383087402312285m -0.8763448500697704m" data-normal="-0.9697454669505523m 0.16069881457021648m 0.1837651227098945m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation" id="hotspot-5">
+            <h2>Main Speaker</h2>
+            <p>The main speaker in PlugPlay earbuds is engineered for premium quality sound, offering crystal-clear audio and immersive soundscapes that elevate your listening experience to new heights.</p>
+          </div>
+      </button>
+      <button class="Hotspot" slot="hotspot-6" data-position="-4.708598980149231m 2.59273641145033m -0.7542611899924488m" data-normal="0.32967794521169985m 0.48016362729072554m 0.8128685892984209m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation" id="hotspot-6">
+            <h2>Ear Plug</h2>
+            <p>Our comfortable and ergonomically designed ear plugs ensure a secure and snug fit, allowing you to enjoy your music for hours on end without discomfort or fatigue.</p>
+          </div>
+      </button>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="images/ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <!-- Loads <model-viewer> for browsers: -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
