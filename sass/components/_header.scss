@@ -45,7 +45,7 @@ nav {
         color: aliceblue;
         text-decoration: none;
         font-size: 30px;
-        font-family: montserrat;
+        font-family: 'montserrat';
     }
 }
 
@@ -77,12 +77,13 @@ nav {
 .promo-container {
     display: flex;
     flex-wrap: nowrap;
+    text-decoration: none;
 
     h1 {
         display: flex;
-        text-decoration-style: none;
         text-align: center;
-        transform: translate(450px, 0px);
+        transform: translate(350px, 0px);
+        color: #1B1464;
     }
 }
 
