@@ -5,9 +5,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/main.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- link to greensock main library and scroll plugin -->
   </head>
   <body>
+    <div class="wrapper">
+      <header id="primary-header">
+        <a href="index.html" id="logo">
+          <img src="images/plugplay_type.svg" alt="plugplay_header" class="bannerlogo">
+        </a>
+  
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only"></span>Menu</button>
+  
+        <nav id="navbar">
+          <li class="active">
+              <a href="index.html">
+                  <span aria-hidden="true"></span>Home
+              </a>
+              <a href="shop.html">
+                  <span aria-hidden="true"></span>Shop
+              </a>
+              <a href="aboutus.html">
+                  <span aria-hidden="true"></span>About Us
+          </li>
+        </nav>
+      </header>
+    </div>
     <model-viewer id="model" src="model/earbuds.gltf" ar ar-modes="webxr scene-viewer quick-look" ios-src="model/earbuds.usdz" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="270.34deg 88.29deg 874.8m" field-of-view="10deg">
 
       <!-- in this version, I have manually added, id="hotspot-1, id="hotspot-2", id="hotspot-3", id="hotspot-4"" -->
@@ -55,7 +78,12 @@
       <div id="ar-prompt">
           <img src="images/ar_hand_prompt.png">
       </div>
-    </model-viewer>  
+    </model-viewer>
+    
+    <div class="promo-container">
+      <h1>Take your listening into the next level</h1>
+    </div>
+
     <!-- Loads <model-viewer> for browsers: -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>

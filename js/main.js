@@ -1,3 +1,20 @@
+const primaryNav = document.querySelector('#navbar');
+const navToggle = document.querySelector('.mobile-nav-toggle');
+const detailContainer = document.getElementById("detail-list");
+
+navToggle.addEventListener('click', () => {
+    const visibility = primaryNav.getAttribute("data-visible");
+
+    if (visibility === "false") {
+        primaryNav.setAttribute("data-visible", "true");
+        navToggle.setAttribute('aria-expanded', "true");
+    } else if (visibility === "true") {
+        primaryNav.setAttribute("data-visible", "false");
+        navToggle.setAttribute('aria-expanded', "false");
+    }
+});
+
+
 (() => {
   //console.log("IIFE Fired");
   //variables
