@@ -14,6 +14,51 @@ navToggle.addEventListener('click', () => {
     }
 });
 
+const details = [{
+  title: "Emblem Design",
+  description: "The emblem design for PlugPlay earbuds is a unique and eye-catching resin design element that adds a touch of style and personality to your audio experience."
+},
+{
+  title: "plugplay Logo",
+  description: "Our logo features a distinctive exclamation point design, symbolizing the excitement and emphasis we place on delivering exceptional audio quality and user satisfaction."
+},
+{
+  title: "Charging Port",
+  description: "The charging port on PlugPlay earbuds is designed for easy connection in its case, with a simple and minimal design for hassle-free recharging."
+},
+{
+  title: "Speaker 2",
+  description: "This secondary speaker is dedicated to delivering extra bass and enhancing the lower-frequency range of your music, ensuring a deep and immersive audio experience."
+},
+{
+  title: "Main Speaker",
+  description: "The main speaker in PlugPlay earbuds is engineered for premium quality sound, offering crystal-clear audio and immersive soundscapes that elevate your listening experience to new heights."
+},
+{
+  title: "Ear Plug",
+  description: "Our comfortable and ergonomically designed ear plugs ensure a secure and snug fit, allowing you to enjoy your music for hours on end without discomfort or fatigue."
+},
+];
+
+details.forEach((detail, index) => {
+  const detailElement = document.createElement("div");
+  detailElement.classList.add("detail");
+  detailElement.innerHTML = `
+    <span class="detail-title">${detail.title}</span>
+    <span class="detail-description">${detail.description}</span>
+    <button class="add-to-cart btn btn-primary" data-index="${index}">BUY NOW</button>
+  `;
+  detailContainer.appendChild(detailElement);
+});
+
+function toggleDetails() {
+  const detailList = document.getElementById('detail-list');
+  if (detailList.style.display === 'none') {
+    detailList.style.display = 'block';
+  } else {
+    detailList.style.display = 'none';
+  }
+}
 
 (() => {
   //console.log("IIFE Fired");
