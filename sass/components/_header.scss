@@ -74,19 +74,6 @@ nav {
     background-image: url(/images/close-button.svg);
 }
 
-.promo-container {
-    display: flex;
-    flex-wrap: nowrap;
-    text-decoration: none;
-
-    h1 {
-        display: flex;
-        text-align: center;
-        transform: translate(350px, 0px);
-        color: #1B1464;
-    }
-}
-
 
 @media screen and (max-width: 375px) {
     #primary-navigation {

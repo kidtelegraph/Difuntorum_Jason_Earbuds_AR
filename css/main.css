@@ -191,18 +191,6 @@ nav a {
   background-image: url(/images/close-button.svg);
 }
 
-.promo-container {
-  display: flex;
-  flex-wrap: nowrap;
-  text-decoration: none;
-}
-.promo-container h1 {
-  display: flex;
-  text-align: center;
-  transform: translate(350px, 0px);
-  color: #1B1464;
-}
-
 @media screen and (max-width: 375px) {
   #primary-navigation {
     display: flex;
@@ -225,6 +213,78 @@ nav a {
     background-image: url(/images/close-button.svg);
   }
 }
+.component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+}
+
+.comp-desc {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.comp-desc p {
+  margin-top: 500px;
+}
+
+.promo-container {
+  display: flex;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  margin-left: 550px;
+}
+.promo-container h1 {
+  display: flex;
+  text-align: center;
+  transform: translate(350px, 0px);
+  color: #1B1464;
+}
+
+.click-me {
+  position: absolute;
+  display: block;
+  z-index: 99;
+  text-align: center;
+  padding: 25px;
+  color: #fff;
+  background-color: #1B1464;
+  border-radius: 2rem;
+  font-size: 66px;
+  font-family: "poppins";
+  transform: translate(-250px, 0);
+  text-decoration: solid;
+}
+
+.details {
+  display: flex;
+  margin-top: 150px;
+  margin-left: -520px;
+  row-gap: 2px;
+}
+
+.detail {
+  border: 3px solid purple;
+  padding: 70px;
+  text-align: center;
+  border-radius: 12px;
+  background-color: #B9FFFA;
+  height: auto;
+  margin-top: inherit;
+}
+
+.detail-title {
+  display: block;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.detail-description {
+  display: block;
+}
+
 #about-us {
   margin-bottom: 40px;
 }
