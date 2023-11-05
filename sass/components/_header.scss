@@ -1,8 +1,9 @@
 @use '../abstracts/' as a;
 
 .header {
-    position: relative;
-    z-index: 1; 
+    position: fixed;
+    z-index: 99;
+    width: 100%; 
   
     // Hamburger Open Styles
     &.open {

@@ -12,9 +12,12 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Dark Blue: hsl(233, 26%, 24%)
+- Dark Blue: #212A3E
+- Grayish Blue: #94867
+- Gray: #9BA4B5
+- Semi White: #F1F6F9
 
-### Neutral
+### Neutral (Alt)
 
 - Grayish Blue: hsl(233, 8%, 62%)
 - Light Grayish Blue: hsl(220, 16%, 96%)
