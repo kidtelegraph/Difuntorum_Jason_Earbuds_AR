@@ -37,7 +37,7 @@
   
     nav {
       position: relative;
-      background-color: powderblue;
+      background-color: a.$grayDark;
       padding-top: 1.0625rem;
       padding-bottom: 1.0625rem;
     }
@@ -96,11 +96,12 @@
       a {
         position: relative;
         font-size: large;
-        color: darkblue;
+        color: a.$semiWhite;
         transition: color 300ms ease-in-out;
         right: 5rem;
         text-decoration: none;
         font-family: 'Poppins', sans-serif;
+        font-weight: 600;
   
         &:not(:last-child){
           margin-right: 32px;
@@ -119,7 +120,7 @@
           transition: opacity 300ms ease-in-out;
         }
         &:hover {
-          color: a.$darkBlue;
+          color: a.$semiWhite;
   
           &::before {
             opacity: 1;

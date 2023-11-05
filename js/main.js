@@ -28,6 +28,67 @@ btnHamburger.addEventListener('click', function(){
   }  
 });
 
+// Scroll to trigger
+gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollToPlugin);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll('#main-header a[href="#product"]');
+
+  function scrollLink(e) {
+    e.preventDefault();
+    console.log(e.currentTarget.hash);
+    let selectedLink = e.currentTarget.hash;
+    gsap.to(window, { duration: 1, scrollTo: { y: selectedLink, offsetY: 100 } });
+  }
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", scrollLink);
+  });
+});
+
+(() => {
+  let imageCon = document.querySelector('#imageCon'),
+      drag = document.querySelector('.image-drag'),
+      left = document.querySelector('.image-left'),
+      dragging = false,
+      min = 0,
+      max = imageCon.offsetWidth;
+
+      function onDown() {
+          dragging = true;
+          console.log("Set to true");
+      }
+
+      function onUp() {
+          dragging = false;
+          console.log("Set to false");
+      }
+
+      function onMove(event) {
+          //console.log("on move called");
+          if(dragging===true) {
+              //console.log("dragging");
+              let x = event.clientX - imageCon.getBoundingClientRect().left;
+              console.log(x);
+
+              if(x < min) {
+                  x = min;
+              } else if (x > max) {
+                  x = max-10;
+              }
+
+              drag.style.left = x + "px";
+              left.style.width = x + "px";
+          }
+      }
+
+      drag.addEventListener('mousedown', onDown);
+      document.body.addEventListener('mouseup', onUp);
+      document.body.addEventListener('mousemove', onMove);
+})();
+
+
 const details = [{
   title: "Emblem Design",
   description: "The emblem design for PlugPlay earbuds is a unique and eye-catching resin design element that adds a touch of style and personality to your audio experience."
@@ -56,7 +117,7 @@ const details = [{
 
 details.forEach((detail, index) => {
   const detailElement = document.createElement("div");
-  detailElement.classList.add("details");
+  detailElement.classList.add("detail");
   detailElement.innerHTML = `
     <span class="detail-title">${detail.title}</span>
     <span class="detail-description">${detail.description}</span>

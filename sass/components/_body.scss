@@ -33,7 +33,7 @@
 }
 
 .click-me {
-    position: absolute;
+    position: inherit;
     display: block;
     z-index: 99;
     text-align: center;
@@ -43,33 +43,39 @@
     border-radius: 2rem;
     font-size: 66px;
     font-family: 'Montserrat', sans-serif;
-    transform: translate(-250px,0);
     text-decoration: solid;
 }
 
 .details {
     display: flex;
     margin-top: 150px;
-    margin-left: -520px;
+    max-width: 100%;
     row-gap: 2px;
 }
   
   .detail {
-    border: 3px solid purple;
+    border: 3px solid a.$grayDark;
     padding: 70px;
     text-align: center;
     border-radius: 12px;
-    background-color: #B9FFFA;
+    background-color: a.$darkBlue;
     height: auto;
-    margin-top: inherit;
+  }
+
+  .detail-list {
+    display: grid;
+    align-items: center;
+    justify-content: center;
   }
   
   .detail-title {
     display: block;
     font-weight: bold;
     font-size: 30px;
+    color: a.$semiWhite;
   }
   
   .detail-description {
     display: block;
+    color: a.$semiWhite;
   }
