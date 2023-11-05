@@ -30,13 +30,27 @@ img, embed, object, video, picture {
   }
   
   .box {
-     background-color: powderblue;
+     background-color: #fff;
      color: rgb(27, 27, 27);
      border-radius: 5px;
      padding: 20px;
      text-align: center;
      margin-top: 10px;
      margin-bottom:10px;
+   }
+
+   .flex {
+      display: flex;
+      gap: var(--gap, 5rem);
+   }
+
+   .grid {
+      display: grid;
+      gap: var(--gap), 1rem;
+   }
+
+   .d-block {
+      display: block;
    }
   
   /* ---Mobile Library Grid Styles--- */
