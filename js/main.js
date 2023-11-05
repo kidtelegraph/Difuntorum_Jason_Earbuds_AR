@@ -1,17 +1,31 @@
-const primaryNav = document.querySelector('.primary-navigation');
-const navToggle = document.querySelector('.mobile-nav-toggle');
+const btnHamburger = document.querySelector('#btnHamburger');
+const body = document.querySelector('body');
+const header = document.querySelector('.header');
+const overlay = document.querySelector('.overlay');
+const fadeElems = document.querySelectorAll('.has-fade');
+const detail = document.querySelector('.details')
 const detailContainer = document.getElementById("detail-list");
 
-navToggle.addEventListener('click', () => {
-    const visibility = primaryNav.getAttribute("data-visible");
+btnHamburger.addEventListener('click', function(){
+  console.log('click hamburger');
 
-    if (visibility === "false") {
-        primaryNav.setAttribute("data-visible", "true");
-        navToggle.setAttribute('aria-expanded', "true");
-    } else if (visibility === "true") {
-        primaryNav.setAttribute("data-visible", "false");
-        navToggle.setAttribute('aria-expanded', "false");
-    }
+  if(header.classList.contains('open')){ // Close Hamburger Menu
+    body.classList.remove('noscroll');
+    header.classList.remove('open');    
+    fadeElems.forEach(function(element){
+      element.classList.remove('fade-in');
+      element.classList.add('fade-out');
+    });
+    
+  }
+  else { // Open Hamburger Menu
+    body.classList.add('noscroll');
+    header.classList.add('open');
+    fadeElems.forEach(function(element){
+      element.classList.remove('fade-out');
+      element.classList.add('fade-in');
+    });
+  }  
 });
 
 const details = [{
@@ -42,7 +56,7 @@ const details = [{
 
 details.forEach((detail, index) => {
   const detailElement = document.createElement("div");
-  detailElement.classList.add("detail");
+  detailElement.classList.add("details");
   detailElement.innerHTML = `
     <span class="detail-title">${detail.title}</span>
     <span class="detail-description">${detail.description}</span>

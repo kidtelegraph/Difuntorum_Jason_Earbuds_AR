@@ -7,32 +7,41 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@400;500;600;800&display=swap" rel="stylesheet"> 
     <!-- link to greensock main library and scroll plugin -->
   </head>
   <body>
-    <div class="wrapper">
-      <header id="primary-header">
-        <a href="index.html" id="logo">
-          <img src="images/plugplay_type.svg" alt="plugplay_header" class="bannerlogo">
-        </a>
+    <div class="col-span-full">
+      <header class="header">
+        <div class="overlay has-fade"></div>
   
-        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only"></span>Menu</button>
+        <nav class="container container--pall flex flex-jc-sb flex-ai-c">
+          <a href="/" class="header__logo">
+            <img src="images/plugplay_type.svg" alt="plugplay logo"/>
+          </a>
   
-        <nav id="navbar">
-          <li class="active">
-              <a href="index.html">
-                  <span aria-hidden="true"></span>Home
-              </a>
-              <a href="shop.html">
-                  <span aria-hidden="true"></span>Shop
-              </a>
-              <a href="aboutus.html">
-                  <span aria-hidden="true"></span>About Us
-              </a>
-          </li>
+          <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+  
+          <div class="header__links hide-for-mobile">
+            <a href="#">Home</a><a href="#">Product</a><a href="#">Components</a>
+            <a href="#">About Us</a>
+          </div>
+  
         </nav>
+  
+        <div class="header__menu has-fade hide-for-desktop">
+          <a href="">Home</a>
+          <a href="">Product</a>
+          <a href="">Components</a>
+          <a href="">About Us</a>
+        </div>
       </header>
     </div>
+
     <model-viewer id="model" src="model/earbuds.gltf" ar ar-modes="webxr scene-viewer quick-look" ios-src="model/earbuds.usdz" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="270.34deg 88.29deg 874.8m" field-of-view="10deg">
 
       <!-- in this version, I have manually added, id="hotspot-1, id="hotspot-2", id="hotspot-3", id="hotspot-4"" -->
@@ -82,9 +91,8 @@
       </div>
     </model-viewer>
 
-    <div class="promo-container">
-      <button class="click-me btn" onclick="toggleDetails()">TAKE YOUR LISTENING TO THE NEXT LEVEL</button>
-      <div class="details" id="detail-list" style="display: none;"></div>
+    <div class="col-span-full">
+      <div class="col-span-6"></div>
     </div>
 
     <!-- Loads <model-viewer> for browsers: -->
