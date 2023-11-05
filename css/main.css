@@ -54,7 +54,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: large;
   font-weight: 400;
-  background-color: #12042a;
+  background-color: #F1F6F9;
 }
 
 .flex {
@@ -221,7 +221,7 @@ model-viewer > #ar-prompt > img {
 }
 .header nav {
   position: relative;
-  background-color: powderblue;
+  background-color: #394867;
   padding-top: 1.0625rem;
   padding-bottom: 1.0625rem;
 }
@@ -265,11 +265,12 @@ model-viewer > #ar-prompt > img {
 .header__links a {
   position: relative;
   font-size: large;
-  color: darkblue;
+  color: #F1F6F9;
   transition: color 300ms ease-in-out;
   right: 5rem;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 .header__links a:not(:last-child) {
   margin-right: 32px;
@@ -287,7 +288,7 @@ model-viewer > #ar-prompt > img {
   transition: opacity 300ms ease-in-out;
 }
 .header__links a:hover {
-  color: hsl(233, 26%, 24%);
+  color: #F1F6F9;
 }
 .header__links a:hover::before {
   opacity: 1;
@@ -385,7 +386,7 @@ model-viewer > #ar-prompt > img {
 }
 
 .footer {
-  background-color: hsl(233, 26%, 24%);
+  background-color: #394867;
   color: hsl(0, 0%, 100%);
   padding: 2.5rem;
   text-align: center;
@@ -401,7 +402,10 @@ model-viewer > #ar-prompt > img {
   }
 }
 .footer a {
-  color: hsl(0, 0%, 100%);
+  color: #F1F6F9;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  font-weight: 400;
 }
 .footer__logo {
   display: inline-block;
@@ -472,7 +476,7 @@ model-viewer > #ar-prompt > img {
   transition: color 150ms ease-in-out;
 }
 .footer__links a:hover {
-  color: hsl(220, 16%, 96%);
+  color: hsl(233, 26%, 24%);
 }
 @media (min-width: 64em) {
   .footer__cta {

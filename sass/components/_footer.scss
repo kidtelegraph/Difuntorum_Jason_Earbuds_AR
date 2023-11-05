@@ -3,7 +3,7 @@
 @use '../abstracts/' as a; // Replace with the correct path
 
 .footer {
-  background-color: a.$darkBlue;
+  background-color: a.$grayDark;
   color: a.$white;
   padding: 2.5rem;
   text-align: center;
@@ -22,7 +22,10 @@
   }
 
   a {
-    color: a.$white;
+    color: a.$semiWhite;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-weight: 400;
   }
 
   &__logo {
@@ -97,7 +100,7 @@
       transition: color 150ms ease-in-out;
 
       &:hover {
-        color: a.$lightGrayishBlue;
+        color: a.$darkBlue;
       }
     }
   }

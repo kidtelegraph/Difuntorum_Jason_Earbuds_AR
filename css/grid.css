@@ -45,6 +45,7 @@ img, embed, object, video, picture {
    }
 
    .grid {
+      position: relative;
       display: grid;
       gap: var(--gap), 1rem;
    }

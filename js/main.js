@@ -28,6 +28,37 @@ btnHamburger.addEventListener('click', function(){
   }  
 });
 
+(() => {
+
+//Scroll to trigger
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollToPlugin);
+
+  const navLinks = document.querySelectorAll("#main-header nav ul li a");
+
+  function scrollLink(e) {    
+          e.preventDefault(); 
+          console.log(e.currentTarget.hash);
+          let selectedLink = e.currentTarget.hash;
+          gsap.to(window, {duration: 1, scrollTo:{y:`${selectedLink}`, offsetY:100 }});
+  }
+
+  navLinks.forEach((link) => {
+      link.addEventListener("click", scrollLink);
+  });
+
+  gsap.to("#box3", 3, 
+  {scrollTrigger: {
+    trigger: "#box3",
+    toggleActions:"restart pause reverse none",
+          markers: true,
+          start: "top center"
+  }, 
+  x:300, ease:Bounce.easeOut
+  });
+
+})();
+
 const details = [{
   title: "Emblem Design",
   description: "The emblem design for PlugPlay earbuds is a unique and eye-catching resin design element that adds a touch of style and personality to your audio experience."
