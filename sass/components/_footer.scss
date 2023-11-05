@@ -1,6 +1,6 @@
 // footer.scss
 
-@use '../abstracts/' as a; // Replace with the correct path
+@use '../abstracts/' as a; 
 
 .footer {
   background-color: a.$grayDark;

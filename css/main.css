@@ -344,7 +344,7 @@ model-viewer > #ar-prompt > img {
 }
 
 .click-me {
-  position: absolute;
+  position: inherit;
   display: block;
   z-index: 99;
   text-align: center;
@@ -354,35 +354,41 @@ model-viewer > #ar-prompt > img {
   border-radius: 2rem;
   font-size: 66px;
   font-family: "Montserrat", sans-serif;
-  transform: translate(-250px, 0);
   text-decoration: solid;
 }
 
 .details {
   display: flex;
   margin-top: 150px;
-  margin-left: -520px;
+  max-width: 100%;
   row-gap: 2px;
 }
 
 .detail {
-  border: 3px solid purple;
+  border: 3px solid #394867;
   padding: 70px;
   text-align: center;
   border-radius: 12px;
-  background-color: #B9FFFA;
+  background-color: hsl(233, 26%, 24%);
   height: auto;
-  margin-top: inherit;
+}
+
+.detail-list {
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
 .detail-title {
   display: block;
   font-weight: bold;
   font-size: 30px;
+  color: #F1F6F9;
 }
 
 .detail-description {
   display: block;
+  color: #F1F6F9;
 }
 
 .footer {
@@ -500,6 +506,175 @@ model-viewer > #ar-prompt > img {
     align-self: end;
     justify-self: end;
   }
+}
+
+#outerShell {
+  max-width: 1200px;
+  border: solid 1px #666;
+}
+
+#imageCon {
+  position: relative;
+  height: 100vh;
+}
+
+.slideImage {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100vh;
+}
+
+.image-right {
+  background: url(../images/earbuds_xray.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.image-left {
+  background: url(../images/earbuds_xray_pure.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 50%;
+  background-attachment: fixed;
+}
+
+.image-drag {
+  background-color: #666;
+  left: 50%;
+  width: 4px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  #mobile-tablet-view {
+    display: none;
+  }
+  #outerShell {
+    display: block;
+    max-width: 1200px;
+    border: solid 1px #666;
+  }
+  #imageCon {
+    position: relative;
+    max-width: 1200px;
+    height: 100vh;
+  }
+  .slideImage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100vh;
+  }
+  .image-right {
+    background: url(../images/earbuds_xray.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  .image-left {
+    background: url(../images/earbuds_xray_pure.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 50%;
+    background-attachment: fixed;
+  }
+  .image-drag {
+    background-color: #666;
+    left: 50%;
+    width: 10px;
+    cursor: pointer;
+  }
+}
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100%;
+  padding: 25px;
+  background: hsl(233, 26%, 24%);
+  margin-bottom: 50px;
+  border-radius: 12px;
+}
+
+.subscribe-form h2 {
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  color: #F1F6F9;
+}
+
+.subscribe-form input {
+  padding: 12px;
+  background: #fff;
+  color: #16182E;
+  border-radius: 6px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.subscribe-form button {
+  margin-top: 25px;
+}
+
+/* general styles for form */
+#contactForm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 900px;
+  width: 100%;
+  padding: 25px;
+  background: hsl(233, 26%, 24%);
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 12px;
+}
+
+#contactForm h2 {
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+#contactForm .flex {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  width: 100%;
+  gap: 20px;
+}
+
+#contactForm input[type=text],
+#contactForm input[type=email],
+#contactForm textarea {
+  padding: 12px;
+  background: #fff;
+  color: #16182E;
+  border-radius: 6px;
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#contactForm textarea {
+  resize: vertical;
+  width: 100%;
+}
+
+#contactForm button[type=submit] {
+  padding: 12px 20px;
+  background-color: #3137e6;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#contactForm button[type=submit]:focus {
+  outline: none;
 }
 
 #about-us {
