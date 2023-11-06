@@ -16,7 +16,7 @@ To run this website locally, follow these steps:
 1. Clone this repository to your local machine.
 2. Open the index.html using live server viewer in VS Code.
 3. View it in your browser of choice
-3. Place your cursor to preferred hotspots to view details
+4. Place your cursor to preferred hotspots to view details
 
 
 # Contact Us
