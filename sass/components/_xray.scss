@@ -1,6 +1,8 @@
+@use '../abstracts/' as a; 
+
 #outerShell {
     max-width: 1200px;
-    border: solid 1px #666;
+    border: solid 5px, a.$grayishBlue;
 }
 
 #imageCon {
@@ -31,13 +33,13 @@
 }
 
 .image-drag {
-    background-color: #666;
+    background-color: a.$grayDark;
     left: 50%;
     width: 4px;
     cursor: pointer;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 35px) {
 
     #mobile-tablet-view {
         display: none;
@@ -46,7 +48,8 @@
     #outerShell {
         display: block;
         max-width: 1200px;
-        border: solid 1px #666;
+        border: solid 5px a.$darkBlue;
+        border-radius: 3px;
     }
     
     #imageCon {
@@ -78,7 +81,7 @@
     }
     
     .image-drag {
-        background-color: #666;
+        background-color: a.$darkBlue;
         left: 50%;
         width: 10px;
         cursor: pointer;
