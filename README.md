@@ -1,5 +1,5 @@
 # Difuntorum_Jason_Earbuds_AR
-MMED - 3039 (Earbuds - Hotspots - AR)
+MMED - 3039 (Earbuds - Hotspots - AR - XRay Slider - Promo)
 
 # PREMIUM EARBUDS by plugplay
 
@@ -16,7 +16,11 @@ To run this website locally, follow these steps:
 1. Clone this repository to your local machine.
 2. Open the index.html using live server viewer in VS Code.
 3. View it in your browser of choice
-4. Place your cursor to preferred hotspots to view details
+4. Scroll Animation in the homepage
+5. X-ray Slider can be found in components
+6. AR View in Components
+7. Place your cursor to preferred hotspots to view details
+8. Contact Form in contact us page
 
 
 # Contact Us

@@ -16,7 +16,7 @@
         <div class="overlay has-fade"></div>
   
         <nav class="container container--pall flex flex-jc-sb flex-ai-c">
-          <a href="/" class="header__logo">
+          <a href="index.html" class="header__logo">
             <img src="images/plugplay_type.svg" alt="plugplay-logo">
           </a>
   
@@ -28,7 +28,7 @@
   
           <div class="header__links hide-for-mobile">
             <a href="index.html">Home</a><a href="index.html">Product</a><a href="shop.html">Components</a>
-            <a href="aboutus.html">About Us</a>
+            <a href="aboutus.html">Contact Us</a>
           </div>
   
         </nav>
@@ -37,16 +37,28 @@
           <a href="index.html">Home</a>
           <a href="index.html">Product</a>
           <a href="shop.html">Components</a>
-          <a href="aboutus.html">About Us</a>
+          <a href="aboutus.html">Contact Us</a>
         </div>
       </header>
     </div>
 
-    <model-viewer id="model" src="model/earbuds.gltf" ar ar-modes="webxr scene-viewer quick-look" ios-src="model/earbuds.usdz" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="270.34deg 88.29deg 874.8m" field-of-view="10deg">
+    <div class="box"></div>
 
-      <!-- in this version, I have manually added, id="hotspot-1, id="hotspot-2", id="hotspot-3", id="hotspot-4"" -->
-      
-      <button class="Hotspot" slot="hotspot-1" data-position="-5.22063637161873m 2.104752613268355m -1.715474364470301m" data-normal="-0.47572329340111386m -0.03784980631390616m -0.8787802571050385m" data-visibility-attribute="visible">
+    <div class="full-width-grid-con">
+      <div class="col-start-2 col-end-4 m-col-start-2 m-col-end-8 l-col-start-2 l-col-end-8">
+        <img src="images/ads/earbud_promo1.jpg" alt="promo_ad3">
+      </div>
+    </div>
+
+    <div class="grid box">
+      <h3>Introducing PlugPlay - Your Sound, Your Style!</h3>
+      <p>At PlugPlay, we're on a mission to elevate the audio experience for music enthusiasts like you. Our mission is all about delivering premium sound quality with a touch of personal style. Whether you're a dedicated audiophile or simply someone who appreciates great music, we've got you covered.</p>
+    </div>
+
+    <div class="col-span-full">
+      <model-viewer id="model" src="model/earbuds.gltf" ar ar-modes="webxr scene-viewer quick-look" ios-src="model/earbuds.usdz" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="270.34deg 88.29deg 874.8m" field-of-view="10deg">
+        <!-- in this version, I have manually added, id="hotspot-1, id="hotspot-2", id="hotspot-3", id="hotspot-4"" -->
+        <button class="Hotspot" slot="hotspot-1" data-position="-5.22063637161873m 2.104752613268355m -1.715474364470301m" data-normal="-0.47572329340111386m -0.03784980631390616m -0.8787802571050385m" data-visibility-attribute="visible">
           <div class="HotspotAnnotation" id="hotspot-1">
             <h2>Emblem Design</h2>
             <p>The emblem design for PlugPlay earbuds is a unique and eye-catching resin design element that adds a touch of style and personality to your audio experience.</p>
@@ -90,9 +102,27 @@
           <img src="images/ar_hand_prompt.png" alt="hand-prompt">
       </div>
     </model-viewer>
+    </div>
 
-    <div class="grid-con">
-      <section class="col-span-full">
+    <div class="grid box">
+      <h2>Elevate your sound, embrace the craftsmanship.</h2>
+      <p>Immerse yourself in audio excellence – our meticulously crafted earbuds boast a symphony of premium materials, fusing style with substance for an unparalleled listening experience.</p>
+    </div>
+
+    <div class="full-width-grid-con">
+      <div class="col-start-2 col-end-4 m-col-start-2 m-col-end-8 l-col-start-2 l-col-end-8">
+        <img src="images/ads/earbud_4.jpg" alt="promo_ad1">
+        <img src="images/ads/earbud_5.jpg" alt="promo_ad2">
+      </div>
+    </div>
+
+    <div class="grid box">
+      <h2>X-ray View</h2>
+      <p>Slide to preview inside components</p>
+    </div>
+
+    <div  class="col-span-full">
+      <section class="col-start-1 col-end-4 m-col-start-2 m-col-end-8 l-col-start-4 l-col-end-10">
           <h2 class="hidden">X-Ray revealer</h2>
           <div id="mobile-tablet-view">
               <img src="images/earbuds_xray.jpg" alt="x-ray_earbuds">
@@ -113,17 +143,14 @@
 
   <section class="col-start-2 col-end-4 m-col-start-2 m-col-end-8 l-col-start-2 l-col-end-10">
       <h2 class="hidden">click me for details</h2>
-      <button class="click-me btn" onclick="toggleDetails()">TAKE YOUR LISTENING TO THE NEXT LEVEL</button>
+      <button class="click-me btn" onclick="toggleDetails()">Component Details</button>
       <div class="details" id="detail-list" style="display: none;"></div>
   </section>
 
-    <div class="full-width-grid-con">
-      <div class="col-start-2 col-end-3 m-col-start-4 m-col-end-8 l-col-start-2 l-col-end-8">
-        <img src="http://placehold.it/600x500" alt="promo_ad">
-        <img src="http://placehold.it/600x500" alt="promo_ad2">
-        <img src="http://placehold.it/1200x500" alt="promo_ad3">
-      </div>
-    </div>
+  <div id="container3" class="container3 accent">
+    <h2>TAKE YOUR LISTENING TO THE NEXT LEVEL</h2>
+    <p>click above to view details</p>
+  </div>
 
     <div class="col-start-2 col-end-3 m-col-start-2 m-col-end-10 l-col-start-2 l-col-end-12">
       <div class="subscribe-form">

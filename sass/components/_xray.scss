@@ -20,21 +20,21 @@
 .image-right {
     background: url(../images/earbuds_xray.jpg) no-repeat;
     background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+    // background-position: center center;
+    // background-attachment: fixed;
 }
 
 .image-left {
     background: url(../images/earbuds_xray_pure.jpg) no-repeat;
     background-size: cover;
-    background-position: center center;
-    width: 50%;
-    background-attachment: fixed;
+    // background-position: center center;
+    width: 70%;
+    // background-attachment: fixed;
 }
 
 .image-drag {
     background-color: a.$grayDark;
-    left: 50%;
+    left: 70%;
     width: 4px;
     cursor: pointer;
 }
@@ -47,14 +47,14 @@
 
     #outerShell {
         display: block;
-        max-width: 1200px;
+        max-width: 1440px;
         border: solid 5px a.$darkBlue;
         border-radius: 3px;
     }
     
     #imageCon {
-        position: relative;
-        max-width: 1200px;
+        position: static;
+        max-width: 1440px;
         height: 100vh;
     }
     
@@ -68,21 +68,21 @@
     .image-right {
         background: url(../images/earbuds_xray.jpg) no-repeat;
         background-size: cover;
-        background-position: center center;
-        background-attachment: fixed;
+        // background-position: center center;
+        // background-attachment: fixed;
     }
     
     .image-left {
         background: url(../images/earbuds_xray_pure.jpg) no-repeat;
         background-size: cover;
-        background-position: center center;
-        width: 50%;
-        background-attachment: fixed;
+        // background-position: center center;
+        width: 70%;
+        // background-attachment: fixed;
     }
     
     .image-drag {
         background-color: a.$darkBlue;
-        left: 50%;
+        left: 70%;
         width: 10px;
         cursor: pointer;
     }
