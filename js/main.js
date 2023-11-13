@@ -48,6 +48,36 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 (() => {
+
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollToPlugin);
+
+  const navLinks = document.querySelectorAll("#main-header nav ul li a");
+
+  function scrollLink(e) {    
+          e.preventDefault(); 
+          console.log(e.currentTarget.hash);
+          let selectedLink = e.currentTarget.hash;
+          gsap.to(window, {duration: 4, scrollTo:{y:`${selectedLink}`, offsetY:100 }});
+  }
+
+  navLinks.forEach((link) => {
+      link.addEventListener("click", scrollLink);
+  });
+
+  gsap.to("#container3", 3, 
+  {scrollTrigger: {
+    trigger: "#container3",
+    toggleActions:"restart pause reverse none",
+          markers: true,
+          start: "top center"
+  }, 
+  x:430, ease:Bounce.easeOut
+  });
+
+})();
+
+(() => {
   let imageCon = document.querySelector('#imageCon'),
       drag = document.querySelector('.image-drag'),
       left = document.querySelector('.image-left'),

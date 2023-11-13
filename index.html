@@ -28,7 +28,7 @@
   
           <div class="header__links hide-for-mobile">
             <a href="#">Home</a><a href="#product">Product</a><a href="shop.html">Components</a>
-            <a href="aboutus.html">About Us</a>
+            <a href="aboutus.html">Contact Us</a>
           </div>
   
         </nav>
@@ -37,7 +37,7 @@
           <a href="index.html">Home</a>
           <a href="index.html">Product</a>
           <a href="shop.html">Components</a>
-          <a href="aboutus.html">About Us</a>
+          <a href="aboutus.html">Contact Us</a>
         </div>
       </header>
     </div>
@@ -51,24 +51,30 @@
       </div>
     </section>
 
-    <section class="full-width-grid-con">
-      <div class="col-span-4 m-col-start-2 m-col-end-8 l-col-start-1 l-col-end-5 box" id="product">
-        <h2>ELEVATE YOUR LISTENING EXPERIENCE!</h2>
-        <p>Introducing our premium earbuds by PlugPlay, where cutting-edge technology meets superior sound quality. Elevate your audio experience to new heights with these state-of-the-art earbuds. Immerse yourself in rich, crystal-clear sound, whether you're enjoying your favorite music, taking calls, or tuning in to your podcasts. Designed for comfort and style, our earbuds offer a secure fit and sleek, modern aesthetics.
-        </p>
-        <img src="http://placehold.it/200x100" alt="icon_1">
-        <img src="http://placehold.it/200x100" alt="icon_2">
-        <img src="http://placehold.it/400x250" alt="icon_3">
+      <div class="col-span-full" id="product">
+        <canvas id="explode-view">
+        </canvas> 
       </div>
 
-      <div class="col-start-2 col-end-4 m-col-start-1 m-col-end-10 l-col-start-1 l-col-end-6 box">
-        <img src="http://placehold.it/875x700" alt="product_ad">
-      </div>
+          <div class="col-span-4 m-col-start-2 m-col-end-8 l-col-start-1 l-col-end-12">
+            <img src="images/ads/earbud_promo5.jpg" alt="icon_3">
+          </div>
+        </div>
+
+        <section class="full-width-grid-con">
+          <div class="col-span-4 m-col-start-2 m-col-end-8 l-col-start-1 l-col-end-5 box">
+            <h2>ELEVATE YOUR LISTENING EXPERIENCE!</h2>
+            <p>Introducing our premium earbuds by PlugPlay, where cutting-edge technology meets superior sound quality. Elevate your audio experience to new heights with these state-of-the-art earbuds. Immerse yourself in rich, crystal-clear sound, whether you're enjoying your favorite music, taking calls, or tuning in to your podcasts. Designed for comfort and style, our earbuds offer a secure fit and sleek, modern aesthetics.
+            </p>
+          </div>
 
       <div class="col-start-2 col-end-8 m-col-start-1 m-col-end-8 l-col-start-1 l-col-end-10 box">
-        <img src="http://placehold.it/350x500" alt="product_ad1">
-        <img src="http://placehold.it/350x500" alt="product_ad2">
-        <img src="http://placehold.it/350x500" alt="product_ad3">
+        <img src="images/ads/earbud_xray_main.jpg" alt="product_ad1">
+          <h2>Sleek Design and Maximum Comfort</h2>
+        <img src="images/ads/earbud_xray_outline.jpg" alt="product_ad2" width="675" height="375">
+        <img src="images/ads/earbud_xray.jpg" alt="product_ad3" width="675" height="375">
+        <p>In crafting our premium earbuds, we embarked on a meticulous design process aimed at delivering both aesthetic elegance and top-notch functionality. The cornerstone of our design lies in the selection of high-quality materials, including premium PVC, polyurethane, resin, and silicone. These components were chosen not only for their durability but also for their ability to harmonize comfort and style. The intricate interplay of these materials forms the foundation of our earbuds, ensuring a sophisticated yet resilient product. Our design ethos revolves around creating a seamless fusion of form and function, providing users with a sophisticated audio accessory that stands out in both performance and aesthetics.
+        </p>
       </div>
       </section>
 
@@ -156,9 +162,9 @@
       <!-- Loads <model-viewer> for browsers: -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="js/explode.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

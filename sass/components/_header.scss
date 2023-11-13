@@ -37,10 +37,12 @@
     }
   
     nav {
-      position: relative;
+      position: absolute;
       background-color: a.$grayDark;
       padding-top: 1.0625rem;
       padding-bottom: 1.0625rem;
+      width: inherit;
+      margin-top: -10px;
     }
   
     &__logo {
@@ -146,9 +148,10 @@
     display: none;
   }
   .header {
-    position: relative;
+    position: fixed;
     z-index: 9;
     max-height: 30%;
     margin-bottom: -13rem;
+    max-width: 100%;
 }
 }
