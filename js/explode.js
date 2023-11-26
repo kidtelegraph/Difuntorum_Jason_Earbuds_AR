@@ -27,10 +27,10 @@
         snap: "frame",
         scrollTrigger: {
             trigger: "#explode-view",
-            pin: true,
+            pin: false,
             scrub: 1,
             start: "top top",
-            markers: true
+            markers: false
         },
         onUpdate: render
     })
