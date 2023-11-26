@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
   {scrollTrigger: {
     trigger: "#container3",
     toggleActions:"restart pause reverse none",
-          markers: true,
+          markers: false,
           start: "top center"
   }, 
   x:430, ease:Bounce.easeOut
